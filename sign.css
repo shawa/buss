@@ -1,0 +1,23 @@
+@import url(http://fonts.googleapis.com/css?family=Droid+Sans+Mono);
+
+body {
+    background: #000;
+}
+
+pre {
+    font-size: 60pt
+}
+
+.glow {
+    color: #fa2;
+    font-family: 'Droid Sans Mono';
+    text-shadow: 0px 0px 10px #b40;
+    text-transform: lowercase;
+}
+.center {
+    position: relative;
+    top: 50%;
+    left: 5%;
+    right: auto;
+    -webkit-transform: translateY(-50%);
+}

@@ -5,7 +5,7 @@ readonly OUTFILE=$3
 readonly FIFO=$4
 
 [ ! -p $FIFO ] && mkfifo $FIFO
-./bus.sh $CREDENTIALS $STOP > $FIFO &
+./bus.sh $CREDENTIALS $STOP | head -n 10 > $FIFO &
 sed "/<pre/r $FIFO" sign.template.html > "$OUTFILE"
 rm $FIFO
 

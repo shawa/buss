@@ -5,7 +5,8 @@ body {
 }
 
 pre {
-    font-size: 60pt
+    font-size: 40pt;
+    width: 20pt;
 }
 
 .glow {
